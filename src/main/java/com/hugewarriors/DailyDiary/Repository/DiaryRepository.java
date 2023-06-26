@@ -11,4 +11,6 @@ import java.util.List;
 public interface DiaryRepository extends JpaRepository<Diary, Integer> {
     @Query(value = "Select * FROM diaries WHERE user_id = :userId", nativeQuery = true)
     List<Diary> getDiaries(Integer userId);
+    @Query(value = "Select * from diaries Where sn = :sn", nativeQuery = true)
+    Diary getDiaryBySn(Integer sn);
 }
