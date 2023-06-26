@@ -18,7 +18,7 @@ public class DiaryController {
         return diaryService.insertData(diary);
     }
 
-    @GetMapping("diary/get")
+    @GetMapping("/diary/get")
     public List<Diary> getDiaries(@PathVariable("userId") Integer userId){
         return diaryService.getDiaries(userId);
     }
