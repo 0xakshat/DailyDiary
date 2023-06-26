@@ -20,8 +20,8 @@ public class DiaryService {
     }
 
     public Diary insertData(Diary diary) {
-        diary.setCreatedAt(LocalDateTime.now());
-        diary.setUpdatedAt(LocalDateTime.now());
+//        diary.setCreatedAt(LocalDateTime.now());
+//        diary.setUpdatedAt(LocalDateTime.now());
         return diaryRepository.save(diary);
     }
 
